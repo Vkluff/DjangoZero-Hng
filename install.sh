@@ -1,4 +1,7 @@
 #!/bin/bash
-pip install --upgrade pip
-pip install gunicorn
-pip install -r requirements.txt
+set -e  # Exit on errors
+
+# Use system Python/pip
+python -m pip install --upgrade pip
+python -m pip install gunicorn
+python -m pip install -r requirements.txt
